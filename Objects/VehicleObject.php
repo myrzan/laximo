@@ -10,6 +10,7 @@ class VehicleObject extends BaseObject
 
     protected static $mainAttributes = [
         'brand',
+        'vin',
         'name',
         'grade',
         'transmission',
@@ -36,6 +37,11 @@ class VehicleObject extends BaseObject
         'modification',
         'description',
     ];
+    
+    /**
+     * @var string
+     */
+    public $vin;
 
     /**
      * @var string
@@ -212,6 +218,7 @@ class VehicleObject extends BaseObject
         $this->ssd               = (string)$data['ssd'];
         $this->vehicleid         = (string)$data['vehicleid'];
         $this->brand             = (string)$data['brand'];
+        $this->vin               = (string)$data['vin'];
         $this->grade             = (string)$data['grade'];
         $this->transmission      = (string)$data['transmission'];
         $this->doors             = (string)$data['doors'];
