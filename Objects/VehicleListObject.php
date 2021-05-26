@@ -10,6 +10,7 @@ class VehicleListObject extends BaseObject
 
     protected static $mainAttributes = [
         'brand',
+        'vin',
         'name',
         'grade',
         'transmission',
